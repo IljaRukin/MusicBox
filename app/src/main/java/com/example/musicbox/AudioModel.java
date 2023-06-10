@@ -1,4 +1,4 @@
-package com.example.easytutomusicapp;
+package com.example.musicbox;
 
 import java.io.Serializable;
 

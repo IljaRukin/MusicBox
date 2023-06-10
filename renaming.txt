@@ -1,0 +1,33 @@
+
+
+
+# renaming Android Studio Project:
+
+rename project folder "EasyTutoMusicApp" to "MusicBox"
+
+in \settings.gradle(Project) rename rootProject.name = "EasyTutoMusicApp" to rootProject.name = "MusicBox" + click "sync now"
+
+in \app\src\main\AndroidManifest.xml right-click on "easytutomusicapp" in package="com.example.easytutomusicapp"> and click "Refactor"-"Rename"-"Rename Package" from "easytutomusicapp" to "musicbox" , confirm with "refactor"-"do refactor"
+
+select "File"-Project Structure..."-"Modules"-"Default Config" and rename "Application ID" from "com.example.easytutomusicapp" to "com.example.musicbox" , confirm with "ok"
+
+in app\src\main\res\values\strings.xml rename <string name="app_name">EasyTutoMusicApp</string> to <string name="app_name">MusicBox</string>
+ensure android:label in \app\src\main\AndroidManifest.xml is set to "@string/app_name"
+
+select "Build"-"Rebuild Project"
+
+
+
+# additional:
+
+in \app\src\main\AndroidManifest.xml rename android:theme="@style/Theme.EasyTutoMusicApp">
+and in <style name="Theme.MusicBox" rename "EasyTutoMusicApp" to "MusicBox"
+
+in \app\src\androidTest\java\com\example\musicbox\ExampleInstrumentedTest.java rename assertEquals("com.example.easytutomusicapp" to assertEquals("com.example.musicbox"
+
+
+
+# not used:
+
+"Build" - "Clean Project"
+"File" - "Invalidate Cache and Restart"

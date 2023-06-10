@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class MusicPlayerActivity extends AppCompatActivity {
+public class MusicBox extends AppCompatActivity {
 
     TextView titleTv,currentTimeTv,totalTimeTv;
     SeekBar seekBar;
@@ -43,7 +43,7 @@ public class MusicPlayerActivity extends AppCompatActivity {
 
         setResourcesWithMusic();
 
-        MusicPlayerActivity.this.runOnUiThread(new Runnable() {
+        MusicBox.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 if(mediaPlayer!=null){
